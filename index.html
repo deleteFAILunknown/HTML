@@ -40,10 +40,9 @@
 
     <hr> <!-- 分隔线 -->
 
-    <h2>更新日志说明</h2>
+    <h2>更新说明</h2>
 
     <ul>
-        <li>最多显示两个版本的更新日志</li>
         <li>不定期更新</li>
     </ul>
 
@@ -69,6 +68,164 @@
     <h3>更新日志</h3>
     <ul>
         <li>为了省电着想，调整通知，从每3秒刷新通知更改为每13秒刷新</li>
+    </ul>
+
+    <hr> <!-- 分隔线 -->
+
+    <h2>V3.7</h2>
+    <p><strong>发布日期：</strong>2026.07.20</p>
+    
+    <h3>更新日志</h3>
+    <ul>
+        <li>更改自定义主题颜色</li>
+        <li>添加快捷分享菜单项</li>
+    </ul>
+
+    <hr> <!-- 分隔线 -->
+
+    <h2>V3.6</h2>
+    <p><strong>发布日期：</strong>2026.07.14</p>
+    
+    <h3>更新日志</h3>
+    <ul>
+        <li>修复多设备出现的UI错乱</li>
+        <li>修复usb连接被异常熔断，从熔断旧链路改为复用旧链路</li>
+        <li>修复log日志显示页因渲染文本而导致的性能爆炸问题</li>
+        <li>移除性能爆炸的 7zip 库以及指令</li>
+        <li>添加本地 Shell IPC跨进程服务，使用 neko 指令调用</li>
+        <li>添加从视频提取音频，使用 neko-audio 指令调用</li>
+        <li>本地 Shell 会话可在菜单项手动终止，专门为了应付 logcat 而做的防备措施</li>
+        <li>前台服务的通知样式变更为交互式，可在通知中直接发送指令，而无需打开界面，唯一的缺点就是没有指令补全以及不显示输出结果，因为我们的日志是直接从缓存区读取的</li>
+    </ul>
+
+    <hr> <!-- 分隔线 -->
+
+    <h2>V3.3</h2>
+    <p><strong>发布日期：</strong>2026.06.29</p>
+    
+    <h3>更新日志</h3>
+    <ul>
+        <li>增强adb shell的输出逻辑</li>
+        <li>修复USB主机模式下的adbd连接</li>
+        <li>修复因为JVM初始内存堆过小，从而导致代码无法被正常调用，因此JVM初始内存堆调整到470MB</li>
+        <li>增强fastboot协议输出流</li>
+        <li>将应用声明为持久性</li>
+        <li>将应用声明为允许申请大堆内存</li>
+        <li>添加更多的扩展指令</li>
+        <li>修复 adb无线调试回连被调用两次而导致adb通道被当做旧通道给清理掉的问题</li>
+        <li>添加Wi-Fi P2P</li>
+        <li>添加Wi-Fi P2P自定义群组指令</li>
+        <li>添加Wi-Fi P2P Socks5代理指令</li>
+    </ul>
+
+    <hr> <!-- 分隔线 -->
+
+    <h2>V3.1</h2>
+    <p><strong>发布日期：</strong>2026.06.18</p>
+    
+    <h3>更新日志</h3>
+    <ul>
+        <li>适配 Android 17 的本地网络权限，防止Wi-Fi传输受限</li>
+    </ul>
+
+    <hr> <!-- 分隔线 -->
+
+    <h2>V3.1</h2>
+    <p><strong>发布日期：</strong>2026.06.17</p>
+    
+    <h3>更新日志</h3>
+    <ul>
+        <li>更改应用名称</li>
+        <li>更新应用图标颜色</li>
+        <li>彻底移除了fastboot可执行文件</li>
+        <li>添加更多的fastboot命令支持</li>
+        <li>添加adb install</li>
+        <li>添加adb uninstall</li>
+        <li>增强adb shell</li>
+        <li>添加扩展指令，这些指令由app提供</li>
+        <li>命令可以通过搜索建议补全</li>
+        <li>全新 Jetpack Compose 界面</li>
+        <li>修复打印日志</li>
+        <li>修复点击建议后光标还停留在原位置的问题</li>
+        <li>添加深色模式主题配置</li>
+        <li>添加多语言，目前有英语/简体中文配置</li>
+        <li>更新github项目信息，可在使用说明查看</li>
+    </ul>
+
+    <hr> <!-- 分隔线 -->
+
+    <h2>V2.6</h2>
+    <p><strong>发布日期：</strong>2026.06.08</p>
+    
+    <h3>更新日志</h3>
+    <ul>
+        <li>添加帧率/刷新率/FPS/cpu测试，需要root权限和su命令支持，此功能使用RootService实现</li>
+        <li>添加 fastboot Linux可执行文件，flash等操作全部交给fastboot可执行文件</li>
+        <li>添加使用 flash_all.sh 进行线刷的按钮，flash_all.sh全程都由fastboot可执行文件操作</li>
+    </ul>
+
+    <hr> <!-- 分隔线 -->
+
+    <h2>V2.1</h2>
+    <p><strong>发布日期：</strong>2026.05.29</p>
+    
+    <h3>更新日志</h3>
+    <ul>
+        <li>改进 Fastboot 协议</li>
+        <li>删掉了快捷 Fastboot 命令中的回锁BL命令</li>
+    </ul>
+
+    <hr> <!-- 分隔线 -->
+
+    <h2>V2.0</h2>
+    <p><strong>发布日期：</strong>2026.05.26</p>
+    
+    <h3>更新日志</h3>
+    <ul>
+        <li>最低支持安卓系统版本调整到安卓9+</li>
+        <li>新增测试 ipv4、ipv6 地址功能如图1</li>
+        <li>无线调试Qr界面，具体功能未实现</li>
+        <li>添加网络安全配置，后续我可能需要实现自定义协议本地网络url才能同时确保无线调试连接以及网络安全，此工程量很大，暂时不会开工</li>
+    </ul>
+
+    <hr> <!-- 分隔线 -->
+
+    <h2>V2.0</h2>
+    <p><strong>发布日期：</strong>2026.05.12</p>
+    
+    <h3>更新日志</h3>
+    <ul>
+        <li>尝试修复 Fastboot flash</li>
+        <li>添加了 USB 配件模式的支持</li>
+        <li>版本升级到 v2.0</li>
+        <li>USB 配件模式一般来说都是用的 AOA 协议，这种协议在车载系统上最为常见，建议自测，目前只支持输出相关 USB 接口信息</li>
+        <li>注意：如果这个玩意的 flash 失败了，那么9008将会是你唯一的救星，flash 系统就用 Android 官方的工具或者xxx不知名 flash 自动化</li>
+    </ul>
+
+    <hr> <!-- 分隔线 -->
+
+    <h2>V0.8</h2>
+    <p><strong>发布日期：</strong>2026.05.09</p>
+    
+    <h3>更新日志</h3>
+    <ul>
+        <li>添加更多的 Fastboot 快捷指令</li>
+        <li>删掉 AutoDismissDialogFragment.kt</li>
+        <li>更新 adb协议版本 0x01000001</li>
+    </ul>
+
+    <hr> <!-- 分隔线 -->
+
+    <h2>V0.8</h2>
+    <p><strong>发布日期：</strong>2026.05.08</p>
+    
+    <h3>更新日志</h3>
+    <ul>
+        <li>重写 Fastboot 通信链路</li>
+        <li>不再支持使用 fastboot_flash.txt 文件来进行刷写</li>
+        <li>添加 fastboot 命令快捷发送</li>
+        <li>最低支持 Android 8.0</li>
+        <li>添加 Xiaomi Version 后缀标识，向用户表明这是一个深度适配小米澎湃OS系统的版本，也可以在原生Android上运行，用户自行测试</li>
     </ul>
 
     <hr> <!-- 分隔线 -->
