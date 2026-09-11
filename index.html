@@ -26,20 +26,25 @@
     <h1>小猫猫 [猫哥]</h1>
 
     <ul>
+        <li>单身、少年、逆天、无惧</li>
+        <li>不太喜欢聊天、交流、结伴、聚众</li>
+        <li>不交友，原因很简单，无聊至极</li>
+    </ul>
+
+    <hr> <!-- 分隔线 -->
+
+    <h2>nekoStudio</h2>
+
+    <ul>
         <li>无需 root 即可连接到 adb</li>
         <li>无需 root 即可进行 fastboot 刷机</li>
         <li>刷机门槛降低，两台手机相互刷机</li>
     </ul>
 
     <ul>
-        <li><a href="https://github.com/deleteFAILunknown/usbFlash">点击跳转到GitHub项目地址</a></li>
+        <li><a href="https://github.com/deleteFAILunknown/nekoStudio">点击跳转到GitHub项目地址</a></li>
         <li><a href="https://1857826230.share.123pan.cn/123pan/mXxSvd-vZNBd">点击跳转到123云盘下载</a></li>
     </ul>
-
-    <hr> <!-- 分隔线 -->
-
-    <h2>网站</h2>
-    <p><strong>更新时间: </strong>2026.08.30</p>
 
     <hr> <!-- 分隔线 -->
 
@@ -47,10 +52,33 @@
 
     <ul>
         <li>不定期更新</li>
+        <li>更新日志的日期对应版本号</li>
     </ul>
 
+    <p><strong>网址更新时间: </strong>2026.09.12</p>
+
     <hr> <!-- 分隔线 -->
-    
+
+    <h2>V4.2</h2>
+    <p><strong>发布日期：</strong>2026.09.11</p>
+
+    <h3>更新日志</h3>
+    <ul>
+        <li>包名回调，移除 Jetpack Compose 的标记，因为 com.adb.kitty 才是原本的包名，com.adb.kitty.compose 只是一个扩展包名</li>
+        <li>重构 Shell 执行器</li>
+        <li>重构文本输入框</li>
+        <li>重构日志看板</li>
+        <li>日志看板将使用 Native C++ 堆外内存</li>
+        <li>通过服务注册的非系统类型动态广播接收器可以让 Shell 脚本通过广播调用 com.adb.kitty 的内部指令，由此迈出脚本线刷第一步，对于非系统类型广播接收器，uid之外的 Shell 无法通过发送广播来调用</li>
+        <li>通知上的返回界面按钮的点击事件，改用 Android 自由窗口模式</li>
+        <li>新增图形化界面，使用libsu实现</li>
+        <li>新增菜单项: Root视图、查看记录的Root数据、持有唤醒锁、释放唤醒锁、添加窗口安全保护、清除窗口安全保护</li>
+    </ul>
+ 
+    <p>⚠️请注意: 录制数据期间会先调用Service的唤醒锁并持有，再开始录制，为了避免UI界面在非录制期间造成不必要的耗电，因此不要随意在菜单项调用Service的唤醒锁</p>
+
+    <hr> <!-- 分隔线 -->
+
     <h2>V4.1</h2>
     <p><strong>发布日期：</strong>2026.08.18</p>
     
@@ -233,7 +261,7 @@
 
     <hr> <!-- 分隔线 -->
 
-    <p><em>开发者免费开源项目，违者将严格追究 “©️版权所有” 相关责任</em></p>
+    <p><em>开发者免费开源项目，违者将严格追究 “©️” 相关责任</em></p>
     
     <p><em>© 2026-2076 开发者名下所有项目的版权归属于[github@deleteFAILunknown]</em></p>
 
