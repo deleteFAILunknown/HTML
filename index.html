@@ -59,6 +59,16 @@
 
     <hr> <!-- 分隔线 -->
 
+    <h2>V4.3</h2>
+    <p><strong>发布日期：</strong>2026.09.12</p>
+    
+    <h3>更新日志</h3>
+    <ul>
+        <li>更改 Android 14+ 前台服务类型判断，如果 Android系统在安装时没有自动给应用授予 android.permission.FOREGROUND_SERVICE_SPECIAL_USE，又或者说不自动授予是 Android系统的默认安全行为，那么前台服务将会放弃注册 ServiceInfo.FOREGROUND_SERVICE_TYPE_SPECIAL_USE 安全变量，等到你使用 AppOps 授予了 android.permission.FOREGROUND_SERVICE_SPECIAL_USE 之后，那么前台服务才会继续叠加注册 ServiceInfo.FOREGROUND_SERVICE_TYPE_SPECIAL_USE 安全变量</li>
+    </ul>
+
+    <hr> <!-- 分隔线 -->
+
     <h2>V4.2</h2>
     <p><strong>发布日期：</strong>2026.09.11</p>
 
